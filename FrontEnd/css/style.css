@@ -1,0 +1,258 @@
+/* Fuentes del sitio*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+/* font-family: 'Kiwi Maru', serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@500;800&family=MuseoModerno:ital@1&family=Orbit&family=Roboto+Condensed&family=Roboto+Slab:wght@300&display=swap');/* font-family: 'Kaisei Tokumin', serif; */
+/* font-family: 'Kaisei Tokumin', serif;
+font-family: 'MuseoModerno', cursive;
+font-family: 'Orbit', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+/* codigo del contenedor principal*/
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+/*Estilos del header*/
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;    
+}
+header img{
+    height: 80%;
+    margin-left: 40px;
+}
+header nav{
+    position: absolute;
+    right:0;
+}
+header nav ul{
+    display: flex;
+    list-style: none ;    
+}
+header nav ul li a{
+    font-size: 25px;
+    margin: 25px;
+}
+header nav ul li a:hover{
+    font-size: 30px;
+}
+/* codigo para el titulo */
+.titulo{
+    width: 100%;
+    height: 55px;
+    background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgb(15, 108, 184),rgba(0,102,183));
+    border: solid 1px #777777;
+}
+.titulo h1{
+    width: 100%;
+    font-size: 32px;
+    color: #F1F1F1;
+    text-align: center;
+    padding: 13px 0px;
+}
+/* Codigo para el contenedor principal */
+#main-contain{
+    width: 100%;
+    /* min-width: 1200px; */
+    height: 80vh;
+    text-align: center;
+    background-image:url('../image/fondo2.jpeg');
+    background-repeat: no-repeat;
+    /* background-size:contain;
+    background-position: center top;  */
+    background-size: cover;
+    background-position: center;
+}
+/* Estilos para el segundo contenedor (Info e imagen) */
+.second-contain{
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(251, 251, 251,1.9), rgba(251, 251, 251,0.9), rgba(251, 251, 251,0.8),rgba(255, 255, 255,0));
+}
+/* Estilos para el divisor de la informacion */
+.second-contain .info{
+    width: 45%;
+    text-align: center;
+    padding-top: 100px;
+    margin-left: 10%;
+}
+.second-contain .info p{
+    font-size: 20px;
+    font-family: 'Kaisei Tokumin', serif;
+    font-weight: 800;
+    color: black;
+}
+/* Estilos para el boton*/
+.results-button{
+    width: 25%;
+    height: 8%;
+    font-size: 15px;
+    font-family: 'Kaisei Tokumin', serif;
+    border-radius: 50px;
+    margin-top: 20%;
+    margin-right: 30%;
+    cursor: pointer; 
+    border-radius: 50px;
+    background-image: linear-gradient(to right, rgba(208,233,255),rgba(136,187,230),rgba(0,102,183));       
+}
+.results-button:hover{
+    color: white;
+    transform: scale(1.03); 
+    box-shadow: 15px 15px 40px 10px #0066b7 inset;
+    border: 2px solid #014e8d ;        
+}
+/* Estilos para el tercer contenedor */
+#third-contain{
+    width: 100%;
+    height: 85vh;
+}
+#third-contain .separador{
+    width: 100%;
+    height: 60px;
+    background-color: #1c6a5c;
+}
+#third-contain .info2{
+    width: 80%;
+    height: 280px;
+    margin: 4% 8%;
+    background-image: linear-gradient(to right,rgb(228, 228, 228),rgb(217, 217, 217),rgb(192, 192, 192));
+    display: inline-flex;
+    align-items: center;
+}
+#third-contain .info2 img{
+    width: 400px;
+    height: 80%; 
+}
+#third-contain .info2 .texto{
+    font-family: 'Kaisei Tokumin', serif;
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+}
+#third-contain .separador2{
+    width: 100%;
+    height: 80px;
+    background-color: #797979;
+}
+#third-contain .separador2 nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+#third-contain .separador2 nav ul li{
+    width: 15%;
+    margin: 10px 20px; 
+    height: 70px;
+}
+#third-contain .separador2 nav ul img{
+    width: 100%;
+    height: 100%;    
+}
+#forth-contain{
+    height: 70vh;  
+    width: 100%;  
+    text-align: center;
+}
+#forth-contain div{
+    height: 100%;
+    width: 100%;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgb(15, 108, 184),rgba(0,102,183));    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Kaisei Tokumin', serif;
+    color: white;
+    font-size: 20px;
+}
+footer img {
+    width: 20%;
+    height: 70%;
+
+}
+
+footer .pieinfo{
+    width: 45%;
+    display: grid;
+    margin: 3%;
+}
+@media(max-width: 1250px){
+    #main-contain{
+        background-size: auto 780px;
+    }  
+}
+@media(max-width:990px){
+    header{
+        height: 120px;
+        display:block;
+        text-align: center;
+    }
+    header img{
+        height: 80px;
+        justify-content: center;
+    }
+    header nav{
+        width: 100%;
+        height: 40px;
+    }    
+    header nav ul{
+        height: 30px;
+        justify-content: center;
+    }       
+    .titulo h1{
+        font-size: 28px;
+    }
+    #main-contain{
+        background-size: auto;
+        position: relative;
+    }    
+    .second-contain{
+        width: 100%;
+        height: 30%;
+        position: absolute;
+        bottom: 2%;
+        background-image: linear-gradient(to top, rgba(251, 251, 251,1.9), rgba(251, 251, 251,0.9), rgba(251, 251, 251,0.8),rgba(255, 255, 255,0));
+        display: flex; 
+    }
+    .second-contain .info{
+        padding-top: 60px;
+        margin-left: 5%;
+    }    
+    .results-button{
+        width: 25%;
+        height: 30%;
+        background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgba(0,102,183));
+        margin: auto; 
+    }
+}
+@media(max-width:700px){
+    header{
+        height: 105px;
+    }
+    header img{
+        height: 70px;
+    }
+    header nav{
+        height: 30px;
+    }     
+    .titulo{
+        height: 70px;
+    }
+    .titulo h1{
+        font-size: 22px;
+    }
+    .second-contain .info p{
+    font-size: 15px;
+    }   
+}
