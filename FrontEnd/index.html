@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Imporat la libreria de Fontawesome -->
-    <script src="https://kit.fontawesome.com/3ffe6415c1.js" crossorigin="anonymous"></script> 
-    <!-- Import the component -->
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+
+    <!-- Boostrap -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
     
     <title>Laboratorio de Analisis de Movimiento</title>
     <title>Document</title>
 </head>
 <body>
+    
     <header>
         <img src="image/logo.png" alt="logo">
         <nav>
             <ul>
                 <li>
-                    <a href=""><i class="fa-solid fa-house" style="color: #0066b7;"></i></a>
+                    <a href=""><i class="bi bi-house-fill" style="color: #0066b7;"></i></a>
+                    <!-- <a href=""><i class="fa-solid fa-house" style="color: #0066b7;"></i></a> -->
                 </li>
                 <li>
-                    <a href=""><i class="fa-solid fa-address-card" style="color: #0066b7;"></i></a>                   
+                    <a href=""><i class="bi bi-person-rolodex"style="color: #0066b7;"></i></a>
                 </li>
                 <li>
-                    <a href=""><i class="fa-brands fa-facebook" style="color: #0066b7;"></i></a>
+                    <a href=""><i class="bi bi-facebook" style="color: #0066b7;"></i></a>
                 </li>
             </ul>
         </nav>
-    </header>
+    </header>   
     <div class="titulo">
         <h1>LABORATORIO DE ANÁLISIS DE MOVIMIENTO</h1>        
     </div>
@@ -41,9 +48,37 @@
                     el reporte de resultados haga click 
                     en el siguiente botón.</p>             
             </div>
-            <button class="results-button">Reporte de resultados</button>
+            <div>
+                
+            </div>
+            <button class="btn_medico " data-bs-toggle="modal" data-bs-target="#medico_moda">Ingreso personal médico</button>
+            <button class="btn_usuario" >Ingreso Paciente</button>            
         </div>
     </section>
+
+
+
+
+    
+<!-- Modal de ingreso personal medicos-->
+<div class="modal fade" id="medico_moda" tabindex="-1" aria-labelledby="medico_modaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="medico_modaLabel">Ingreso personal médico</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Olvido contraseña</button>
+                <button type="button" class="btn btn-primary">Ingresar</button>
+            </div>
+        </div>
+    </div>
+</div>
     <section id="third-contain">
         <div class="separador"></div>
         <div class="info2">
@@ -74,17 +109,12 @@
                         <img src="image/testc.png" alt="">
                     </li>
                 </ul>
-                <!-- <button class="p-exam"></button>
-                <button class="podo"></button>
-                <button class="an-video"></button>
-                <button class="dg-video"></button>
-                <button class="others"></button> -->
             </nav>
         </div>
     </section>
     <section id="forth-contain">
         <div>
-            <iframe width="80%" height="80%" src="https://www.youtube.com/embed/C3_jtB97Afk?controls=0">
+            <iframe width="60%" height="80%" src="https://www.youtube.com/embed/C3_jtB97Afk?controls=0">
             </iframe>
         </div>
     </section>
@@ -92,16 +122,25 @@
         <img src="image/logo2.png" alt="logo Roosevelt">
         <div class="pieinfo">
             <p>
-                <a href=""><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></a> 
+                <a href=""><i class="bi bi-geo-alt" style="color: #ffffff;"></i></a> 
                 Sede principal Cra 4 Este #17-50 Bogotá, Colombia<br> 
-                <a href=""><i class="fa-solid fa-phone" style="color: #ffffff;"></i></a>  
+                <a href=""><i class="bi bi-telephone-fill" style="color: #ffffff;"></i></a>  
                 +57 (601) 3534026 ext.350 <br>
-                <a href=""><i class="fa-solid fa-mobile" style="color: #ffffff;"></i></a>
+                <a href=""><i class="bi bi-phone-fill" style="color: #ffffff;"></i></a>
                 +57 320 3481010  <br>                             
-                <a href=""><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></a>
+                <a href=""><i class="bi bi-envelope-at" style="color: #ffffff;"></i></a>
                 rooseveltmarcha@ioir.org.co
             </p>
         </div>
-    </footer>    
+    </footer> 
+
+
+
+
+
+
+
+
+
 </body>
 </html>
