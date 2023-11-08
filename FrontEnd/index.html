@@ -51,8 +51,8 @@
             <div>
                 
             </div>
-            <button class="btn_medico " data-bs-toggle="modal" data-bs-target="#medico_moda">Ingreso personal médico</button>
-            <button class="btn_usuario" >Ingreso Paciente</button>            
+            <button class="btn_medico " data-bs-toggle="modal" data-bs-target="#medico_moda">Registrase</button>
+            <button class="btn_usuario" >Ingresar </button>            
         </div>
     </section>
     
@@ -68,27 +68,36 @@
                 <form action="back/iniciarsesion.php" method="POST">
                     <div class="form-row">
                         <div class="form-group col-md-4">
-                            <label for="inputusuario">Usuario</label>
-                            <input type="email" class="form-control" name="username" id="inputusuario" placeholder="Email o usuario" required>
+                            <label for="inputusuario">Nombres</label>
+                            <input type="text" class="form-control" name="name" id="inputusuario" placeholder="Digite sus nombres" required>
                         </div>
                         <div class="form-group col-md-4">
-                            <label for="inputcontra">Contraseña</label>
-                            <input type="password" class="form-control" name="pass" id="inputcontra" placeholder="" required>
+                            <label for="inputcontra">Apellidos</label>
+                            <input type="text" class="form-control" name="lastname" id="inputcontra" placeholder="Digite sus apellidos" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-4">
-                            <label for="inputid_paciente">ID paciente</label>
-                            <input type="text" class="form-control" name="idpatient" id="inputid_paciente" placeholder="Número de documento del paciente" required>
+                            <label for="inputusuario">Fecha de Nacimiento</label>
+                            <input type="date" class="form-control" name="birthdate" id="inputusuario" placeholder="Correo electrónico" required>
                         </div>
                         <div class="form-group col-md-4">
-                            <label for="inputfecha_examen">Fecha del Examen</label>
-                            <input type="date" class="form-control" name="testday" id="inputfecha_examen" placeholder="" required>
+                            <label for="inputcontra">ID paciente</label>
+                            <input type="text" class="form-control" name="idpatient" id="inputcontra" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputid_paciente">Correo electrónico</label>
+                            <input type="email" class="form-control" name="email" id="inputid_paciente" placeholder="e-mail" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputfecha_examen">Contraseña</label>
+                            <input type="password" class="form-control" name="pass" id="inputfecha_examen" placeholder="" required>
                         </div>
                     </div>   
                     <div class="modal-footer">
-                        <button  type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Olvido contraseña</button>
-                        <button name="signin_btn" type="submit" class="btn btn-primary">Ingresar</button>
+                        <button  type="submit" class="btn btn-primary" data-bs-dismiss="modal">Registrar</button>
                         <button type="reset" class="btn btn-secondary">Limpiar</button>
                     </div>               
                 </form>             
