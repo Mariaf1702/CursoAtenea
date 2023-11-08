@@ -193,7 +193,7 @@ footer .pieinfo{
 }
 /* Estilos del formulario (MODAL)*/
 .modal .modal-dialog {
-    width: 70%;
+    width: 50%;
     max-width: none;
     background-color: #ffffffc5;
     border-radius: 15px;
@@ -205,9 +205,19 @@ footer .pieinfo{
     color: #1e5588;
     text-align: center;
 }
-
 .modal .modal-header{
     flex-direction: column-reverse;
+}
+.modal .form-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.modal .modal-footer{
+    justify-content: center;
+}
+.modal .btn-primary{
+    background-color: #1e5588;
+    border-color:#1e5588 ;
 }
 
 /* Responsive */
