@@ -55,10 +55,6 @@
             <button class="btn_usuario" >Ingreso Paciente</button>            
         </div>
     </section>
-
-
-
-
     
 <!-- Modal de ingreso personal medicos-->
 <div class="modal fade" id="medico_moda" tabindex="-1" aria-labelledby="medico_modaLabel" aria-hidden="true">
@@ -69,13 +65,35 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                
+                <form action="back/iniciarsesion.php" method="POST">
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputusuario">Usuario</label>
+                            <input type="email" class="form-control" name="username" id="inputusuario" placeholder="Email o usuario" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputcontra">Contraseña</label>
+                            <input type="password" class="form-control" name="pass" id="inputcontra" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputid_paciente">ID paciente</label>
+                            <input type="text" class="form-control" name="idpatient" id="inputid_paciente" placeholder="Número de documento del paciente" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputfecha_examen">Fecha del Examen</label>
+                            <input type="date" class="form-control" name="testday" id="inputfecha_examen" placeholder="" required>
+                        </div>
+                    </div>   
+                    <div class="modal-footer">
+                        <button  type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Olvido contraseña</button>
+                        <button name="signin_btn" type="submit" class="btn btn-primary">Ingresar</button>
+                        <button type="reset" class="btn btn-secondary">Limpiar</button>
+                    </div>               
+                </form>             
+            </div>
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Olvido contraseña</button>
-                <button type="button" class="btn btn-primary">Ingresar</button>
-            </div>
         </div>
     </div>
 </div>
