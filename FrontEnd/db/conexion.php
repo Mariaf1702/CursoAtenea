@@ -14,5 +14,4 @@ if ($conexion -> connect_errno) {
     echo "Si se conecto a la DB";
 }
 
-
 ?>
