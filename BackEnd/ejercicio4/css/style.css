@@ -1,0 +1,11 @@
+form{
+    width: 80%;
+    margin: 5% 30%;
+}
+form .col-sm-10{
+    padding-top: 20px;
+    margin-left: 13%;
+}
+h1{
+    text-align: center;
+}
